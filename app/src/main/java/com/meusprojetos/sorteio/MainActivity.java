@@ -19,10 +19,12 @@ public class MainActivity extends AppCompatActivity {
     public void sortearNumero(View view){
 
         Random random = new Random();
-        int r = random.nextInt(10);
+        int numero = random.nextInt(11);//bound é 11 pois a contagem é feita a partir do 0
+
+        //int numero = new Random().nextInt(11) -> solução do professor
 
         TextView texto = findViewById(R.id.textoResultado);
-        texto.setText("O número selecionado: " +r);
+        texto.setText("O número selecionado é: " +numero);
 
     }
 }
